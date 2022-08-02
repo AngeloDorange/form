@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+
+        <video autoplay muted loop>
+            <source src="img/FIFA.mp4" type="video/mp4">
+        </video>
+
+
+        <div class="container-content">
+
+        
+        <div class="card">
+
+            <div class="card-left">
+                <div class="logo">
+                    <i class="fa fa-gamepad"></i>
+                    <h3>GAMEPAD</h3>
+                </div>
+                <div class="title">
+                    <h1>REGISTER HERE</h1>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, debitis?</P>
+                </div>
+
+                <form action="#" method="post" id="form" name="valid" onsubmit="return validateForm()">
+
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" name="mail" id="email" placeholder="Example@gmail.com">
+                        <p id="validate"></p>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="option">Add a game</label>
+                        <select name="game" id="gam" required>
+                            <option value=""></option>
+                            <option value="NINJA ASSASSIN">NINJA ASSASSIN</option>
+                            <option value="SHADOW OF DEATH">SHADOW OF DEATH</option>
+                            <option value="E FOOTBALL 2022">E FOOTBALL 2022</option>
+                            <option value="GRAND THEFT AUTO:VICE">GRAND THEFT AUTO:VICE</option>
+                            <option value="ASPHALT 9">ASPHALT 9</option>
+                        </select>
+                        <p id="valida"></p>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="date">Enter your age</label>
+                        <input type="text" name="mois" id="date" placeholder="Enter your age...">
+                        <p id="age"></p>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="option">Password</label>
+                        <input type="password" name="passwor" pattern=".{8,12}" id="password" placeholder="Your password">
+                        <p id="pass"></p>
+                    </div>
+
+                    <button type="submit" onclick="submitForm()">Confirm inscription</button>
+                </form>
+
+
+                <div class="footer-left">
+                    <p>Already have an account ? <span><a href="#">LOG HERE</a></span></p>
+                </div>
+
+            </div>
+
+            <div class="card-right">
+                <div class="right-title">
+                    <i class="fa fa-gamepad"></i>
+                    <h1>GAMEPAD</h1>
+                </div>
+                <div class="right-content">
+                    <h2>Join the competition</h2>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempora officiis nesciunt eaque, sit cupiditate odit nostrum voluptatem eos neque?</p>
+                </div>
+            </div>
+
+
+        </div>
+        
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="form.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
